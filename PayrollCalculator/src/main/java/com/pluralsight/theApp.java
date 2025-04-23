@@ -22,11 +22,14 @@ public class theApp {
                     continue;
                 }
                 Employee theEmployee = new Employee(Integer.parseInt(inputParts[0]), inputParts[1], Double.parseDouble(inputParts[2]), Double.parseDouble(inputParts[3]));
+
+                System.out.printf("%d - %s - $%.2f\n", theEmployee.getEmployeeId(), theEmployee.getName(), theEmployee.getGrossPay());
+                /*
                 System.out.println("ID: " + theEmployee.getEmployeeId());
                 System.out.println("Name: " + theEmployee.getName());
                 System.out.println("Gross Pay: $" + theEmployee.getGrossPay());
                 System.out.println("--------------------------");
-
+                */
             }
 
         }catch (Exception e){
